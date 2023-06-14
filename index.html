@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9th Grade Marksheet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <h1>Grade Calculator</h1>
+      <div class="row">
+        <div class="col col-lg-4 col-md-4 col-sm-12 col-12 form-group">
+          <label for="text-name">Name:</label>
+          <input
+            type="text"
+            id="text-name"
+            name="text-name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="col col-lg-4 col-md-4 col-sm-12 col-12 form-group">
+          <label for="text-age">Age:</label>
+          <input
+            type="number"
+            id="text-age"
+            name="text-age"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+        <div class="col col-lg-4 col-md-4 col-sm-12 col-12 form-group">
+          <label for="text-roll-number">Roll No:</label>
+          <input
+            type="text"
+            id="text-roll-number"
+            name="text-roll-number"
+            placeholder="Enter your roll no"
+            required
+          />
+        </div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-12 col-12 form-group"
+          style="width: 16.5rem"
+        >
+          <label for="subject1">Subject 1:</label>
+          <input
+            class="marks-fields"
+            type="number"
+            id="subject1"
+            name="subject1"
+            placeholder="Enter marks for subject 1"
+            required
+          />
+        </div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-12 col-12 form-group"
+          style="width: 16rem"
+        >
+          <label for="subject2">Subject 2:</label>
+          <input
+            class="marks-fields"
+            type="number"
+            id="subject2"
+            name="subject2"
+            placeholder="Enter marks for subject 2"
+            required
+          />
+        </div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-12 col-12 form-group"
+          style="width: 16rem"
+        >
+          <label for="subject3">Subject 3:</label>
+          <input
+            class="marks-fields"
+            type="number"
+            id="subject3"
+            name="subject3"
+            placeholder="Enter marks for subject 3"
+            required
+          />
+        </div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-12 col-12 form-group"
+          style="width: 16rem"
+        >
+          <label for="subject4">Subject 4:</label>
+          <input
+            class="marks-fields"
+            type="number"
+            id="subject4"
+            name="subject4"
+            placeholder="Enter marks for subject 4"
+            required
+          />
+        </div>
+        <div
+          class="col col-lg-2 col-md-2 col-sm-12 col-12 form-group"
+          style="width: 16rem"
+        >
+          <label for="subject5">Subject 5:</label>
+          <input
+            class="marks-fields"
+            type="number"
+            id="subject5"
+            name="subject5"
+            placeholder="Enter marks for subject 5"
+            required
+          />
+        </div>
+        <button id="btn-generate-report" type="submit">
+          Generate Marksheet
+        </button>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <h1>Records</h1>
+      <div class="row">
+        <div class="col">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>ROll #</th>
+                <th>Mark 1</th>
+                <th>Mark 2</th>
+                <th>Mark 3</th>
+                <th>Mark 4</th>
+                <th>Mark 5</th>
+                <th>Total Marks</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
